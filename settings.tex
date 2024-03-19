@@ -1,0 +1,62 @@
+
+
+
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[
+    style=ieee,
+    backend=biber
+]{biblatex}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+\usepackage{appendix}
+\usepackage[paperwidth=8.5in,paperheight=11.0in,
+  left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,
+  includefoot,heightrounded]{geometry}
+%Figures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+%Drawing
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{physics}
+%Notation
+\usepackage{bm}
+
+\usepackage{pythonhighlight}
+
+
+\renewcommand*\contentsname{Table of Contents}
+\setlength\bibitemsep{1.5\itemsep}
+\setlength{\parindent}{0em}
+\usepackage{xcolor}
+ \definecolor{light-gray}{gray}{0.95}
+ \newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+ \newcommand\zrnb{Zr-2.5\%Nb\ }
+ \usepackage{makecell}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{xparse}
+\NewDocumentCommand{\codeword}{v}{%
+\texttt{\textcolor{gray}{#1}}%
+}
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+\usepackage{tablefootnote}
+
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
